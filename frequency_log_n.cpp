@@ -16,7 +16,7 @@ int main(){
 
     // equal_range() returns the lower_bound() and the upper_bound() as a pair.
 
-    auto range_vector = equal_range(numbers_vector.begin(), numbers_vector.end(), 1);
+    auto range_vector = equal_range(numbers_vector.begin(), numbers_vector.end(), 1); // frequency of 1
     auto range_array = equal_range(numbers_array, numbers_array + 8, 1);
 
     cout << range_vector.second - range_vector.first << endl; // 3
