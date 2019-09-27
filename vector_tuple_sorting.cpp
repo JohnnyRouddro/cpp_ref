@@ -5,7 +5,7 @@ bool sort_by_second(const tuple<int, float, char> &a, const tuple<int, float, ch
     return (get<1>(a) < get<1>(b));
 }
 bool sort_by_third(const tuple<int, float, char> &a, const tuple<int, float, char> &b){
-    return (get<1>(a) < get<1>(b));
+    return (get<2>(a) < get<2>(b));
 }
 
 // ======= for reverse, we only return if it's "greater than" the other
@@ -14,7 +14,7 @@ bool sort_by_second_rev(const tuple<int, float, char> &a, const tuple<int, float
     return (get<1>(a) > get<1>(b));
 }
 bool sort_by_third_rev(const tuple<int, float, char> &a, const tuple<int, float, char> &b){
-    return (get<1>(a) > get<1>(b));
+    return (get<2>(a) > get<2>(b));
 }
 
 int main(){
